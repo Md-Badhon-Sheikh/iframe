@@ -4,18 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/iframe.css">
+    <style>
+        a{
+            text-decoration: none;
+            display: block;
+            size: 20px;
+            background-color: #bb7575;
+            margin-top: 10px;
+            text-align: center;
+            font-weight: 600;
+            color: #f0dfdf;
+            border-radius: 5px;
+            padding: 8px 20px;
+        }
+        a:hover{
+            background-color: #fff;
+            color: black;
+        }
+        .btn-section{
+            width: 20%;
+            float: left;
+            height: 600px;
+            background-color: #f0dfdf;
+        }   
+    </style>
 </head>
 <body>
-   <section>
-    <div class="btn-section">
-        <button class="btn"><a href="login.html" target="iframe">Login</a></button>
-        <button class="btn"><a href="personal-info.html" target="iframe">Personal Info</a></button>
-        <button class="btn"><a href="table.html" target="iframe">Table</a></button>
-    </div>
-    <div class="iframe">
-        <iframe src="home.html" frameborder="0" name="iframe"></iframe>
-    </div>
-   </section>
+        <div class="btn-section">
+            <a href="login.html" target="a">Login Page</a>
+            <a href="personal-info.html" target="a">Information</a>
+            <a href="table.html" target="a">Table</a>
+        </div>
+        <div>
+            <iframe style="width: 75%; height: 600px; background-color: #f0dfdf;" src="home.html" frameborder="0" name="a" ></iframe>
+        </div>
 </body>
 </html>
